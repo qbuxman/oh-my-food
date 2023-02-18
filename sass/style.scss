@@ -6,6 +6,7 @@ $primary: #9356dc;
 $secondary: #ff79da;
 $tertiary: #99e2d0;
 $grey: #eaeaea;
+$black: #353535;
 
 html * {
   font-family: "Roboto", sans-serif;
@@ -20,6 +21,13 @@ html * {
   font-weight: 500;
   background: linear-gradient($secondary, $primary);
 }
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
 
 // Header
 header {
@@ -59,3 +67,20 @@ header {
 }
 
 // Footer
+footer {
+  background-color: $black;
+  color: white;
+  padding: 1em;
+  h3 {
+    font-size: 1.3em;
+    font-family: "Shrikhand", cursive;
+    margin: 0.5em 0;
+  }
+  ul > li {
+    margin: 0.5em 0;
+    i {
+      width: 12px!important;
+      margin-right: 1em;
+    }
+  }
+}

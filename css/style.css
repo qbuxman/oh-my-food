@@ -91,6 +91,12 @@ html * {
   background: linear-gradient(#ff79da, #9356dc);
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
 header {
   position: relative;
   text-align: center;
@@ -124,6 +130,24 @@ header {
 .call-to-action .concept {
   margin: 1em 0;
   font-size: 1.2em;
+}
+
+footer {
+  background-color: #353535;
+  color: white;
+  padding: 1em;
+}
+footer h3 {
+  font-size: 1.3em;
+  font-family: "Shrikhand", cursive;
+  margin: 0.5em 0;
+}
+footer ul > li {
+  margin: 0.5em 0;
+}
+footer ul > li i {
+  width: 12px !important;
+  margin-right: 1em;
 }
 
 /*# sourceMappingURL=style.css.map */
