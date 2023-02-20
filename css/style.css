@@ -186,7 +186,7 @@ a {
     transform: rotate(360deg);
   }
 }
-header {
+.header-global {
   position: relative;
   text-align: center;
   padding: 1em;
