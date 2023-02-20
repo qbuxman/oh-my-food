@@ -81,9 +81,28 @@ html * {
   font-family: "Roboto", sans-serif;
 }
 
+main {
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.ml-2 {
+  margin-left: 2em;
+}
+
 .btn {
   border: 1px solid #eaeaea;
   border-radius: 25px;
+  width: 210px;
   padding: 1em;
   font-size: 16px;
   color: #fff;
@@ -99,10 +118,10 @@ html * {
   box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.3);
 }
 
-a {
-  text-decoration: none;
-  color: inherit;
-  cursor: pointer;
+.title {
+  font-size: 1.3em;
+  font-family: "Shrikhand", cursive;
+  margin: 0.5em 0;
 }
 
 .grid {
@@ -289,12 +308,7 @@ header {
 footer {
   background-color: #353535;
   color: white;
-  padding: 1.5em;
-}
-footer h3 {
-  font-size: 1.3em;
-  font-family: "Shrikhand", cursive;
-  margin: 0.5em 0;
+  padding: 1em 1.5em;
 }
 footer ul > li {
   margin: 0.5em 0;
@@ -302,6 +316,71 @@ footer ul > li {
 footer ul > li i {
   width: 12px !important;
   margin-right: 1em;
+}
+
+.return-link {
+  position: absolute;
+  top: 25px;
+  left: 15px;
+}
+
+.menu-container {
+  padding: 1em;
+  background: #eaeaea;
+  border-radius: 25px 25px 0 0;
+  position: relative;
+  margin-top: -4em;
+}
+
+.menu-heading {
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu-details article {
+  margin: 2em 0;
+}
+
+.menu-section {
+  text-transform: uppercase;
+  position: relative;
+}
+.menu-section::after {
+  content: "";
+  background-color: #99e2d0;
+  width: 2em;
+  height: 0.2em;
+  position: absolute;
+  left: 0;
+  bottom: -0.2em;
+}
+
+.menu-item {
+  background: white;
+  border-radius: 15px;
+  padding: 0.8em 2em 0.8em 0.5em;
+  margin: 1em 0;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+.menu-item .item-details {
+  display: flex;
+  justify-content: space-between;
+}
+.menu-item .item-details p:first-child {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.menu-item::first-letter {
+  text-transform: capitalize;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  margin: 2em 0 1em;
 }
 
 /*# sourceMappingURL=style.css.map */

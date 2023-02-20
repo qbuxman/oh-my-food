@@ -1,0 +1,69 @@
+.return-link {
+  position: absolute;
+  top: 25px;
+  left: 15px;
+}
+
+.restaurant-img {
+}
+
+.menu-container {
+  padding: 1em;
+  background: $grey;
+  border-radius: 25px 25px 0 0;
+  position: relative;
+  margin-top: -4em;
+}
+
+.menu-heading {
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu-details {
+    article {
+        margin: 2em 0;
+    }
+}
+
+.menu-section {
+  text-transform: uppercase;
+  position: relative;
+  &::after {
+    content: "";
+    background-color: $tertiary;
+    width: 2em;
+    height: 0.2em;
+    position: absolute;
+    left: 0;
+    bottom: -0.2em;
+  }
+}
+
+.menu-item {
+  background: white;
+  border-radius: 15px;
+  padding: 0.8em 2em 0.8em 0.5em;
+  margin: 1em 0;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  .item-details {
+    display: flex;
+    justify-content: space-between;
+    p:first-child {
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+  }
+  &::first-letter {
+    text-transform: capitalize;
+  }
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  margin: 2em 0 1em;
+}
