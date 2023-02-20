@@ -146,6 +146,7 @@ a {
 }
 .is-fav:hover {
   opacity: 100%;
+  cursor: pointer;
 }
 
 .loader-container {
@@ -375,6 +376,9 @@ footer ul > li i {
 }
 .menu-item::first-letter {
   text-transform: capitalize;
+}
+.menu-item:hover {
+  cursor: pointer;
 }
 
 .btn-container {

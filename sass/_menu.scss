@@ -4,9 +4,6 @@
   left: 15px;
 }
 
-.restaurant-img {
-}
-
 .menu-container {
   padding: 1em;
   background: $grey;
@@ -59,6 +56,9 @@
   }
   &::first-letter {
     text-transform: capitalize;
+  }
+  &:hover {
+    cursor: pointer;
   }
 }
 
