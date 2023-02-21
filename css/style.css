@@ -362,37 +362,37 @@ footer ul > li i {
   display: flex;
 }
 .menu-item-container .select-item {
-  opacity: 0%;
   cursor: pointer;
-  border-radius: 0 15px 15px 0;
+  display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: 0px 15px 15px 0;
   background-color: #99e2d0;
   width: 0;
-  margin: 1em 0;
+  margin: 1em 0 1em -0.5em;
   transition: 0.4s;
+  overflow: hidden;
 }
 .menu-item-container .select-item .select-icon {
   visibility: hidden;
-  transition: 0.4s ease-in-out;
-  transform: rotate(0deg);
+  transition: 0.4s;
+  transform: rotate(45deg);
   color: white;
+  font-size: 2em;
 }
 .menu-item-container:hover .menu-item {
   border-radius: 15px 0 0 15px;
 }
 .menu-item-container:hover .select-item {
   opacity: 100%;
-  align-items: center;
-  display: flex;
-  padding: 1em 2em;
-  transition: 0.4s;
+  padding: 1em 3em;
+  margin-left: -1em;
 }
 .menu-item-container:hover .select-item .select-icon {
   visibility: visible;
-  transform: rotate(-360deg);
-  transition: 0.4s;
+  transform: rotate(360deg);
   font-size: 2em;
+  margin-left: 0;
 }
 
 .menu-item {
