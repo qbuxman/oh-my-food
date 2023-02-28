@@ -35,66 +35,73 @@
 }
 
 .menu-item-container {
-  display: flex;
-  .select-item {
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 0px 15px 15px 0;
-    background-color: $tertiary;
-    width: 0;
-    margin: 0.5em 0 0.5em -0.5em;
-    transition: 0.4s;
-    overflow: hidden;
-
-    .select-icon {
-      visibility: hidden;
-      transition: 0.4s;
-      transform: rotate(45deg);
-      color: white;
-      font-size: 2em;
-    }
-  }
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 1em;
+  margin-bottom: 15px;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  box-shadow: -1px 6px 10px 2px rgb(166 166 166 / 34%);
 
   &:hover {
-    .menu-item {
-      border-radius: 15px 0 0 15px;
-    }
+    cursor: pointer;
+  }
 
-    .select-item {
-      opacity: 100%;
-      padding: 1em 3em;
-      margin-left: -1em;
-      
-      .select-icon {
-        visibility: visible;
-        transform: rotate(360deg);
-        font-size: 2em;
-        margin-left: 0;
+  .menu-item {
+    width: 100%;
+    transition: 0.7s ease-in-out;
+
+    &:hover {
+      width: 75%;
+      .item-details {
+        .select-item {
+          right: 0vw;
+          transition: 0.7s ease-in-out;
+          i {
+            animation: rotate 0.5s linear;
+            animation-delay: 0.3s;
+          }
+        }
       }
     }
-  }
-}
 
-.menu-item {
-  width: 100%;
-  background: white;
-  border-radius: 15px;
-  padding: 0.8em 2em 0.8em 0.5em;
-  margin: 0.5em 0;
-  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-
-  &::first-letter {
-    text-transform: capitalize;
-  }
-  .item-details {
-    display: flex;
-    justify-content: space-between;
-    p:first-child {
-      text-overflow: ellipsis;
-      overflow: hidden;
+    h4 {
+      margin: 0;
       white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .item-details {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      p:first-child {
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+      }
+
+      .select-item {
+        position: absolute;
+        text-align: center;
+        right: -20vw;
+        top: 0;
+        height: 100%;
+        width: 20%;
+        transition: 1s;
+        background-color: $tertiary;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: 0.7s ease-in-out;
+
+        i {
+          color: #fff;
+          font-size: 1.5em;
+        }
+      }
     }
   }
 }
