@@ -1,8 +1,8 @@
 @keyframes fadeout {
-  from {
+  0% {
     opacity: 100%;
   }
-  to {
+  100% {
     opacity: 0%;
     visibility: hidden;
   }
@@ -23,5 +23,16 @@
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+
+@keyframes slide-top {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 100%;
   }
 }
