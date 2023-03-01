@@ -146,6 +146,7 @@ a {
     .functioning-step {
       position: relative;
       display: flex;
+      justify-content: start;
       align-items: center;
       padding: 1.5em;
       background-color: #f7f7f7;
@@ -167,7 +168,7 @@ a {
       .step-description {
         margin-left: 1em;
         font-weight: bold;
-        font-size: 1.2em;
+        // font-size: 1.2em;
         i {
           margin-right: 1em;
           color: $greyBolder;
@@ -237,3 +238,7 @@ footer {
 
 // Menu Pages
 @import "_menu.scss";
+
+// Responsive
+// Tablets
+@import "responsive";
