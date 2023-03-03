@@ -439,7 +439,7 @@ footer ul > li i {
 .menu-item-container .menu-item .item-details .select-item {
   position: absolute;
   text-align: center;
-  right: -20vw;
+  right: -19vw;
   top: 0;
   height: 100%;
   width: 20%;
@@ -514,6 +514,9 @@ footer ul > li i {
   .restaurants .restaurants-list a {
     width: 40vw;
   }
+  .menu-item-container .menu-item .item-details .select-item {
+    right: -20vw;
+  }
   footer .title {
     text-align: center;
   }
@@ -543,5 +546,8 @@ footer ul > li i {
   }
   .menu-details .menu-block .menu-section {
     margin-left: 0 !important;
+  }
+  .menu-item-container .menu-item .item-details .select-item {
+    right: -6vw;
   }
 }/*# sourceMappingURL=style.css.map */

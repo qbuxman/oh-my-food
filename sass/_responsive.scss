@@ -23,6 +23,10 @@
     }
   }
 
+  .menu-item-container .menu-item .item-details .select-item {
+    right: -20vw;
+  }
+
   footer {
     .title {
       text-align: center;
@@ -58,5 +62,9 @@
         margin-left: 0 !important;
       }
     }
+  }
+
+  .menu-item-container .menu-item .item-details .select-item {
+    right: -6vw;
   }
 }
