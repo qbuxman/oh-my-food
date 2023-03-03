@@ -529,8 +529,9 @@ footer ul > li i {
   }
   .restaurants .restaurants-list {
     gap: 2em;
+    justify-content: flex-start;
   }
   .restaurants .restaurants-list a {
-    width: 20vw;
+    width: 30vw;
   }
 }/*# sourceMappingURL=style.css.map */

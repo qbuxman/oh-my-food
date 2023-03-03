@@ -42,8 +42,9 @@
 
   .restaurants .restaurants-list {
     gap: 2em;
+    justify-content: flex-start;
     a {
-      width: 20vw;
+      width: 30vw;
     }
   }
 }
