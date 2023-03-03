@@ -121,16 +121,15 @@ a {
 }
 
 .call-to-action {
-  background-color: #f7f7f7;
+  background-color: $lightGrey;
   text-align: center;
-  padding: 3em 1em;
+  padding: 3em 2em;
   .tagline {
     font-weight: 900;
-    font-size: 2.2em;
+    font-size: 2em;
   }
   .concept {
     margin: 1em 0;
-    font-size: 1.2em;
   }
 }
 
@@ -141,9 +140,17 @@ a {
 }
 
 .functioning {
-  padding: 2em 2em 5em 2em;
+  padding: 1em;
+  margin: 1em 0 2em;
   .functioning-steps {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1em;
     .functioning-step {
+      width: 85vw;
+      margin: 0 auto;
       position: relative;
       display: flex;
       justify-content: start;
@@ -168,7 +175,6 @@ a {
       .step-description {
         margin-left: 1em;
         font-weight: bold;
-        // font-size: 1.2em;
         i {
           margin-right: 1em;
           color: $greyBolder;
@@ -185,38 +191,44 @@ a {
 }
 
 .restaurants {
-  background-color: $grey;
-  padding: 2em 2em 5em 2em;
-  .restaurants-list .restaurants-item {
-    background-color: white;
-    border-radius: 15px;
-    position: relative;
-    img {
-      border-top-left-radius: 15px;
-      border-top-right-radius: 15px;
-      object-fit: cover;
-      width: 335px;
-      height: 180px;
-      width: 100%;
-    }
-    .tag {
-      position: absolute;
-      top: 10px;
-      right: 10px;
-      background-color: $tertiary;
-      padding: 0.5em;
-      border-radius: 3px;
-      font-weight: bold;
-      color: $green;
-    }
-    .restaurants-item-infos {
-      padding: 1em;
-      display: grid;
-      grid-template-columns: auto auto;
-      align-items: center;
-      justify-content: space-between;
-      .restaurants-item-text .restaurants-name {
+  background-color: $lightGrey;
+  padding: 3em 1em 4em;
+  .restaurants-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1em;
+    .restaurants-item {
+      background-color: white;
+      border-radius: 15px;
+      position: relative;
+      img {
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        object-fit: cover;
+        width: 335px;
+        height: 180px;
+        width: 100%;
+      }
+      .tag {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background-color: $tertiary;
+        padding: 0.5em;
+        border-radius: 3px;
         font-weight: bold;
+        color: $green;
+      }
+      .restaurants-item-infos {
+        padding: 1em;
+        display: grid;
+        grid-template-columns: auto auto;
+        align-items: center;
+        justify-content: space-between;
+        .restaurants-item-text .restaurants-name {
+          font-weight: bold;
+        }
       }
     }
   }

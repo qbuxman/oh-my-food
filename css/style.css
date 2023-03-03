@@ -228,15 +228,14 @@ a {
 .call-to-action {
   background-color: #f7f7f7;
   text-align: center;
-  padding: 3em 1em;
+  padding: 3em 2em;
 }
 .call-to-action .tagline {
   font-weight: 900;
-  font-size: 2.2em;
+  font-size: 2em;
 }
 .call-to-action .concept {
   margin: 1em 0;
-  font-size: 1.2em;
 }
 
 .section-title {
@@ -246,9 +245,19 @@ a {
 }
 
 .functioning {
-  padding: 2em 2em 5em 2em;
+  padding: 1em;
+  margin: 1em 0 2em;
+}
+.functioning .functioning-steps {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1em;
 }
 .functioning .functioning-steps .functioning-step {
+  width: 85vw;
+  margin: 0 auto;
   position: relative;
   display: flex;
   justify-content: start;
@@ -287,8 +296,14 @@ a {
 }
 
 .restaurants {
-  background-color: #eaeaea;
-  padding: 2em 2em 5em 2em;
+  background-color: #f7f7f7;
+  padding: 3em 1em 4em;
+}
+.restaurants .restaurants-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1em;
 }
 .restaurants .restaurants-list .restaurants-item {
   background-color: white;
@@ -491,6 +506,4 @@ footer ul > li i {
     flex-wrap: wrap;
     justify-content: space-around;
   }
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
