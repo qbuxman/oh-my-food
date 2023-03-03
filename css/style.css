@@ -495,9 +495,42 @@ footer ul > li i {
 }
 
 @media screen and (min-width: 768px) {
-  .functioning-steps {
+  .functioning .functioning-steps {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
     justify-content: space-around;
+  }
+  .functioning .functioning-steps .functioning-step {
+    width: 40vw;
+    margin: 0;
+    justify-content: center;
+  }
+  .restaurants .restaurants-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 2em;
+  }
+  .restaurants .restaurants-list a {
+    width: 40vw;
+  }
+  footer .title {
+    text-align: center;
+  }
+  footer ul {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+@media screen and (min-width: 992px) {
+  .functioning .functioning-steps .functioning-step {
+    width: 28vw;
+  }
+  .restaurants .restaurants-list {
+    gap: 2em;
+  }
+  .restaurants .restaurants-list a {
+    width: 20vw;
   }
 }/*# sourceMappingURL=style.css.map */

@@ -1,7 +1,49 @@
 @media screen and (min-width: 768px) {
-  .functioning-steps {
-    display: flex;
+  .functioning {
+    .functioning-steps {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: space-around;
+      .functioning-step {
+        width: 40vw;
+        margin: 0;
+        justify-content: center;
+      }
+    }
+  }
+
+  .restaurants .restaurants-list {
+    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    gap: 2em;
+    a {
+      width: 40vw;
+    }
+  }
+
+  footer {
+    .title {
+      text-align: center;
+    }
+    ul {
+      display: flex;
+      
+      justify-content: space-around;
+    }
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .functioning .functioning-steps .functioning-step {
+    width: 28vw;
+  }
+
+  .restaurants .restaurants-list {
+    gap: 2em;
+    a {
+      width: 20vw;
+    }
   }
 }
