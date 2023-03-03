@@ -403,20 +403,19 @@ footer ul > li i {
 .menu-item-container:hover {
   cursor: pointer;
 }
-.menu-item-container .menu-item {
-  width: 100%;
-  transition: 0.7s ease-in-out;
-}
-.menu-item-container .menu-item:hover {
+.menu-item-container:hover .menu-item {
   width: 75%;
 }
-.menu-item-container .menu-item:hover .item-details .select-item {
+.menu-item-container:hover .menu-item .item-details .select-item {
   right: 0vw;
   transition: 0.7s ease-in-out;
 }
-.menu-item-container .menu-item:hover .item-details .select-item i {
-  animation: rotate 0.5s linear;
-  animation-delay: 0.3s;
+.menu-item-container:hover .menu-item .item-details .select-item i {
+  animation: rotate 0.5s linear 0.3s;
+}
+.menu-item-container .menu-item {
+  width: 100%;
+  transition: 0.7s linear;
 }
 .menu-item-container .menu-item h4 {
   margin: 0;

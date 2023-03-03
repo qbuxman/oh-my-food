@@ -56,23 +56,24 @@
     cursor: pointer;
   }
 
-  .menu-item {
-    width: 100%;
-    transition: 0.7s ease-in-out;
-
-    &:hover {
+  &:hover {
+    .menu-item {
       width: 75%;
       .item-details {
         .select-item {
           right: 0vw;
           transition: 0.7s ease-in-out;
           i {
-            animation: rotate 0.5s linear;
-            animation-delay: 0.3s;
+            animation: rotate 0.5s linear 0.3s;
           }
         }
       }
     }
+  }
+
+  .menu-item {
+    width: 100%;
+    transition: 0.7s linear;
 
     h4 {
       margin: 0;
