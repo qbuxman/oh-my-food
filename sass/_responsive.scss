@@ -47,4 +47,16 @@
       width: 30vw;
     }
   }
+
+  .menu-details {
+    display: flex;
+    justify-content: center;
+    gap: 1em 2em;
+    .menu-block {
+      width: 30vw;
+      .menu-section {
+        margin-left: 0 !important;
+      }
+    }
+  }
 }

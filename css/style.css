@@ -534,4 +534,15 @@ footer ul > li i {
   .restaurants .restaurants-list a {
     width: 30vw;
   }
+  .menu-details {
+    display: flex;
+    justify-content: center;
+    gap: 1em 2em;
+  }
+  .menu-details .menu-block {
+    width: 30vw;
+  }
+  .menu-details .menu-block .menu-section {
+    margin-left: 0 !important;
+  }
 }/*# sourceMappingURL=style.css.map */
