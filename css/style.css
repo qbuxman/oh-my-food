@@ -405,6 +405,7 @@ footer ul > li i {
 }
 .menu-item-container:hover .menu-item {
   width: 75%;
+  transition: 0.8s ease-in-out;
 }
 .menu-item-container:hover .menu-item .item-details .select-item {
   right: 0vw;
@@ -417,13 +418,13 @@ footer ul > li i {
   width: 100%;
   transition: 0.7s linear;
 }
-.menu-item-container .menu-item h4 {
+.menu-item-container .menu-item h3 {
   margin: 0;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.menu-item-container .menu-item h4::first-letter {
+.menu-item-container .menu-item h3::first-letter {
   text-transform: capitalize;
 }
 .menu-item-container .menu-item .item-details {
@@ -435,6 +436,9 @@ footer ul > li i {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
+}
+.menu-item-container .menu-item .item-details p.bold {
+  margin-left: 1em;
 }
 .menu-item-container .menu-item .item-details .select-item {
   position: absolute;
@@ -550,4 +554,6 @@ footer ul > li i {
   .menu-item-container .menu-item .item-details .select-item {
     right: -6vw;
   }
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */

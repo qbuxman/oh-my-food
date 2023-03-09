@@ -59,6 +59,7 @@
   &:hover {
     .menu-item {
       width: 75%;
+      transition: 0.8s ease-in-out;
       .item-details {
         .select-item {
           right: 0vw;
@@ -75,7 +76,7 @@
     width: 100%;
     transition: 0.7s linear;
 
-    h4 {
+    h3 {
       margin: 0;
       white-space: nowrap;
       overflow: hidden;
@@ -93,6 +94,9 @@
         text-overflow: ellipsis;
         overflow: hidden;
         white-space: nowrap;
+      }
+      p.bold {
+        margin-left: 1em;
       }
 
       .select-item {
