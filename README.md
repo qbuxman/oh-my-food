@@ -11,8 +11,6 @@ Les principaux objectifs de ce projet sont :
 * Mettre en place une structure de navigation pour un site web
 
 ## Contraintes techniques
-
----
 #### Technologies
 * Le développement devra se faire en CSS, sans JavaScript
 * Aucun framework ne devra être utilisé, en revanche l’utilisation de SASS serait un
@@ -28,7 +26,6 @@ Github Pages une fois terminé.
 Chrome et Firefox.
 
 ## Livrables attendus
----
 #### Contenu des pages
 ##### Page d'acceuil (x1)
 * Affichage de la localisation des restaurants. À terme il sera possible de choisir sa
@@ -72,7 +69,7 @@ sur desktop au lieu du clic. Si l’intitulé du plat est trop long, il devra ê
 des points de suspension.
 
 ### Outils utilisés
----
+
 * Visual Studio Code
 * Live Server (plugin VSCode)
 * Prettier (plugin VSCode)
