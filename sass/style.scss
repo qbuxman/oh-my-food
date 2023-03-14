@@ -109,9 +109,23 @@ a {
   color: #353535;
   background: $grey;
   padding: 1.2em;
-  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   i {
-    margin-right: 1em;
+    margin-left: 1em;
+  }
+  label {
+    display: none;
+  }
+  input {
+    border: none;
+    background: $grey;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 0 0 0 0.5em;
+    color: #353535;
+    width: 60%;
   }
 }
 

@@ -214,10 +214,24 @@ a {
   color: #353535;
   background: #eaeaea;
   padding: 1.2em;
-  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .localization i {
-  margin-right: 1em;
+  margin-left: 1em;
+}
+.localization label {
+  display: none;
+}
+.localization input {
+  border: none;
+  background: #eaeaea;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 0 0 0 0.5em;
+  color: #353535;
+  width: 60%;
 }
 
 .call-to-action {
