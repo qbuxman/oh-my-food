@@ -296,10 +296,13 @@ a {
   margin-right: 1em;
   color: #7e7e7e;
 }
-.functioning .functioning-steps .functioning-step:last-child {
-  background-color: #f5edff;
+.functioning .functioning-steps .functioning-step:hover {
+  transition: 0.3s;
+  cursor: pointer;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.3);
+  background-color: #f5edff !important;
 }
-.functioning .functioning-steps .functioning-step:last-child i {
+.functioning .functioning-steps .functioning-step:hover i {
   color: #9356dc;
 }
 
